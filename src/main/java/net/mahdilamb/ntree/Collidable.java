@@ -1,8 +1,12 @@
 package net.mahdilamb.ntree;
 
-import net.imglib2.RealInterval;
+public interface Collidable {
+    int numDimensions();
 
-public interface Collidable extends RealInterval {
+    double realMin(int d);
+
+    double realMax(int d);
+
     default boolean containsBoundingBox(Collidable other) {
         if (other.numDimensions() != numDimensions()) {
             throw new IllegalArgumentException("cannot perform intersection on objects with different number of dimensions");
@@ -28,46 +32,48 @@ public interface Collidable extends RealInterval {
         return true;
     }
 
-    default boolean containsPoint(double[] coords) {
+    default boolean containsPoint(float[] coords) {
         assert coords.length == 2 || coords.length == 3;
-        final double[] max = coords.clone();
+        final float[] max = coords.clone();
         for (int i = 0; i < max.length; i++) {
             max[i] += .5;
         }
         return containsBoundingBox(new Box(coords, max));
     }
 
-    default boolean intersectsRay(double[] origin, double[] direction) {
+    default Float intersectsRay(float[] origin, float[] direction) {
+        //TODO intersects ray
         assert origin.length == 3;
         assert direction.length == 3;
-        final double[] dirfrac = new double[3];
-        dirfrac[0] = 1.0d / direction[0];
-        dirfrac[1] = 1.0d / direction[1];
-        dirfrac[2] = 1.0d / direction[2];
+        final float[] dirFrac = new float[3];
+        dirFrac[0] = 1.0f / direction[0];
+        dirFrac[1] = 1.0f / direction[1];
+        dirFrac[2] = 1.0f / direction[2];
 
-        final double t1 = (realMin(0) - origin[0]) * dirfrac[0];
-        final double t2 = (realMax(0) - origin[0]) * dirfrac[0];
-        final double t3 = (realMin(1) - origin[1]) * dirfrac[1];
-        final double t4 = (realMax(1) - origin[1]) * dirfrac[1];
-        final double t5 = (realMin(2) - origin[2]) * dirfrac[2];
-        final double t6 = (realMax(2) - origin[2]) * dirfrac[2];
+        final float t1 = (float) ((realMin(0) - origin[0]) * dirFrac[0]);
+        final float t2 = (float) ((realMax(0) - origin[0]) * dirFrac[0]);
+        final float t3 = (float) ((realMin(1) - origin[1]) * dirFrac[1]);
+        final float t4 = (float) ((realMax(1) - origin[1]) * dirFrac[1]);
+        final float t5 = (float) ((realMin(2) - origin[2]) * dirFrac[2]);
+        final float t6 = (float) ((realMax(2) - origin[2]) * dirFrac[2]);
 
-        final double tmin = Math.max(Math.max(Math.min(t1, t2), Math.min(t3, t4)), Math.min(t5, t6));
-        final double tmax = Math.min(Math.min(Math.max(t1, t2), Math.max(t3, t4)), Math.max(t5, t6));
+        final float tmax = Math.min(Math.min(Math.max(t1, t2), Math.max(t3, t4)), Math.max(t5, t6));
 
         // if tmax < 0, ray (line) is intersecting AABB, but the whole AABB is behind us
         if (tmax < 0) {
             //t = tmax;
-            return false;
+            return null;
         }
+
+        final float tmin = Math.max(Math.max(Math.min(t1, t2), Math.min(t3, t4)), Math.min(t5, t6));
 
         // if tmin > tmax, ray doesn't intersect AABB
         if (tmin > tmax) {
             //t = tmax;
-            return false;
+            return null;
         }
 
         //t = tmin;
-        return true;
+        return tmin;
     }
 }

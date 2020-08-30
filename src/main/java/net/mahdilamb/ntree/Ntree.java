@@ -19,12 +19,12 @@ public class Ntree<T> {
     final List<NTreeNode> foundObjects = new Vector<>();
     int capacity;
     int maxLevel;
-    Collidable bounds;
+    Box bounds;
     Ntree<T> parent;
     int numDimensions;
     private boolean isLeaf = true;
     private int level = 0;
-    public Ntree(final Collidable bound, final int capacity, final int maxLevel) {
+    public Ntree(final Box bound, final int capacity, final int maxLevel) {
         this.bounds = bound;
         this.capacity = capacity;
         this.maxLevel = maxLevel;
@@ -33,6 +33,10 @@ public class Ntree<T> {
             children.add(null);
         }
     }
+    public Ntree(float[] min, float[] max, final int capacity, final int maxLevel) {
+        this(new Box(min, max),capacity, maxLevel);
+
+    }
 
     public Ntree(final Ntree<T> other) {
         this(other.getBounds(), other.capacity, other.maxLevel);
@@ -40,15 +44,15 @@ public class Ntree<T> {
 
     private void subdivide() {
 
-        final double[] min = new double[numDimensions];
-        final double[] newLengths = new double[numDimensions];
+        final float[] min = new float[numDimensions];
+        final float[] newLengths = new float[numDimensions];
         for (int d = 0; d < numDimensions; d++) {
-            min[d] = getBounds().realMin(d);
-            newLengths[d] = (getBounds().realMax(d) - getBounds().realMin(d)) * 0.5f;
+            min[d] = (float) getBounds().realMin(d);
+            newLengths[d] = (float) ((getBounds().realMax(d) - getBounds().realMin(d)) * 0.5f);
         }
         for (int i = 0; i < (1 << numDimensions); i++) {
-            final double[] thisMin = min.clone();
-            final double[] thisMax = new double[numDimensions];
+            final float[] thisMin = min.clone();
+            final float[] thisMax = new float[numDimensions];
             for (int e = 0; e < numDimensions; e++) {
                 if ((i & (1 << e)) == e + 1) {
                     thisMin[e] += newLengths[e];
@@ -68,7 +72,7 @@ public class Ntree<T> {
     private Ntree<T> getChild(final Collidable bound) {
         int i = 0;
         for (int d = 0; d < numDimensions; d++) {
-            final double center = (getBounds().realMin(d) + getBounds().realMax(d)) * .5f;
+            final float center = (float) ((getBounds().realMin(d) + getBounds().realMax(d)) * .5f);
             if (bound.realMax(d) > center && bound.realMin(d) < center) {
                 return null;
             }
@@ -240,7 +244,7 @@ public class Ntree<T> {
         return getObjectsContaining(new Box(x, y, 0, 0));
     }
 
-    public Collidable getBounds() {
+    public Box getBounds() {
         return bounds;
     }
 

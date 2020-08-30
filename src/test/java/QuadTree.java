@@ -79,10 +79,10 @@ class GraphicsPanel extends JPanel {
 public class QuadTree {
     final static JFrame frame = new JFrame();
     final static GraphicsPanel panel = new GraphicsPanel();
-    final static List<NTreeNode> selected = new Vector<NTreeNode>();
+    final static List<NTreeNode> selected = new Vector<>();
     final static int width = 500;
     final static int height = 500;
-    final static Ntree<Integer> quadTree = new Ntree<Integer>(new Box(0, 0, width, height), 1, 10);
+    final static Ntree<Integer> quadTree = new Ntree<>(new Box(0, 0, width, height), 1, 10);
 
     static void addRect(final Box rect) {
         quadTree.insert(rect, null);

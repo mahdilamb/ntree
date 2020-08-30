@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2354d06e-36c2-4422-91ef-9b1f7fa7aa82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_efficient_java_matrix_library_ejml_0_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__gov_nist_math_jama_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jitk_jitk_tps_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imglib2_imglib2_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imglib2_imglib2_realtransform_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imglib2_imglib2_roi_0_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_trove4j_trove4j_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ntree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ntree.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Collidable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Collidable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Ntree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Ntree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuadTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuadTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Box.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Collidable$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Collidable$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Collidable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Collidable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Ntree$NTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Ntree$NTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Ntree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/mahdilamb/ntree/Ntree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GraphicsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GraphicsPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/QuadTree$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/QuadTree$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/QuadTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/QuadTree.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gkbgDAjUH9coELapUafN7udrzN" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="QuadTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuadTree" />
+      <module name="ntree" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuadTree" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2354d06e-36c2-4422-91ef-9b1f7fa7aa82" name="Default Changelist" comment="" />
+      <created>1598661647582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598661647582</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="805" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1598662375779">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state x="805" y="249" key="#com.intellij.ide.util.MemberChooser/80.0.1840.1080@80.0.1840.1080" timestamp="1598662375779" />
+    <state x="271" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1598661725450">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state x="271" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1598661725450" />
+    <state width="1797" height="294" key="GridCell.Tab.0.bottom" timestamp="1598663211042">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
+    <state width="1797" height="294" key="GridCell.Tab.0.center" timestamp="1598663211042">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
+    <state width="1797" height="294" key="GridCell.Tab.0.left" timestamp="1598663211042">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
+    <state width="1797" height="294" key="GridCell.Tab.0.right" timestamp="1598663211042">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
+  </component>
+</project>
