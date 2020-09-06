@@ -33,16 +33,10 @@ public interface Collidable {
     }
 
     default boolean containsPoint(float[] coords) {
-        assert coords.length == 2 || coords.length == 3;
-        final float[] max = coords.clone();
-        for (int i = 0; i < max.length; i++) {
-            max[i] += .5;
-        }
-        return containsBoundingBox(new Box(coords, max));
+        return containsBoundingBox(new Box(coords, coords));
     }
 
-    default Float intersectsRay(float[] origin, float[] direction) {
-        //TODO intersects ray
+    default Float rayIntersectAABB(float[] origin, float[] direction) {
         assert origin.length == 3;
         assert direction.length == 3;
         final float[] dirFrac = new float[3];
@@ -61,8 +55,8 @@ public interface Collidable {
 
         // if tmax < 0, ray (line) is intersecting AABB, but the whole AABB is behind us
         if (tmax < 0) {
-            //t = tmax;
             return null;
+
         }
 
         final float tmin = Math.max(Math.max(Math.min(t1, t2), Math.min(t3, t4)), Math.min(t5, t6));

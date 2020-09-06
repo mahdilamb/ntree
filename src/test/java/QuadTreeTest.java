@@ -1,6 +1,7 @@
 import net.mahdilamb.ntree.Box;
-import net.mahdilamb.ntree.Ntree;
-import net.mahdilamb.ntree.Ntree.NTreeNode;
+import net.mahdilamb.ntree.NTree;
+import net.mahdilamb.ntree.NTreeNode;
+import net.mahdilamb.ntree.QuadTree;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,18 +22,18 @@ class GraphicsPanel extends JPanel {
     GraphicsPanel() {
     }
 
-    private void drawBounds(Graphics g, Ntree quadTree) {
+    private void drawBounds(Graphics g, NTree<?> quadTree) {
         if (quadTree.getChildren().get(0) == null) {
             return;
         }
         for (int i = 0; i < 4; i++) {
-            g.drawRect((int) ((Ntree) quadTree.getChildren().get(i)).getBounds().realMin(0),
-                    (int) ((Ntree) quadTree.getChildren().get(i)).getBounds().realMin(1),
-                    (int) (((Ntree) quadTree.getChildren().get(i)).getBounds().realMax(0)
-                            - ((Ntree) quadTree.getChildren().get(i)).getBounds().realMin(0)),
-                    (int) (((Ntree) quadTree.getChildren().get(i)).getBounds().realMax(1)
-                            - ((Ntree) quadTree.getChildren().get(i)).getBounds().realMin(1)));
-            drawBounds(g, (Ntree) quadTree.getChildren().get(i));
+            g.drawRect((int) quadTree.getChildren().get(i).getBounds().realMin(0),
+                    (int) (quadTree.getChildren().get(i)).getBounds().realMin(1),
+                    (int) ((quadTree.getChildren().get(i)).getBounds().realMax(0)
+                            - (quadTree.getChildren().get(i)).getBounds().realMin(0)),
+                    (int) ((quadTree.getChildren().get(i)).getBounds().realMax(1)
+                            - (quadTree.getChildren().get(i)).getBounds().realMin(1)));
+            drawBounds(g, quadTree.getChildren().get(i));
 
         }
 
@@ -44,19 +45,12 @@ class GraphicsPanel extends JPanel {
 
         g.setColor(java.awt.Color.white);
 
-        drawBounds(g, QuadTree.quadTree);
-        final List<Ntree<Integer>.NTreeNode> objects = QuadTree.quadTree
-                .getObjectsInBound(new Box(0, 0, QuadTree.width, QuadTree.height));
-        objects.sort(new Comparator<NTreeNode>() {
+        drawBounds(g, QuadTreeTest.quadTree);
+        final List<NTreeNode<Integer>> objects = QuadTreeTest.quadTree
+                .getObjectsInBound(new Box(0, 0, QuadTreeTest.width, QuadTreeTest.height));
+        objects.sort((o1, o2) -> ((Boolean) o1.isSelected).compareTo(o2.isSelected));
 
-            @Override
-            public int compare(NTreeNode o1, NTreeNode o2) {
-                return ((Boolean) o1.isSelected).compareTo(o2.isSelected);
-            }
-
-        });
-
-        for (NTreeNode obj : objects) {
+        for (NTreeNode<Integer> obj : objects) {
             g.setColor(obj.isSelected ? java.awt.Color.green : java.awt.Color.red);
             g.fillRect((int) obj.bound.realMin(0), (int) obj.bound.realMin(1),
                     (int) (obj.bound.realMax(0) - obj.bound.realMin(0)),
@@ -76,13 +70,13 @@ class GraphicsPanel extends JPanel {
 
 }
 
-public class QuadTree {
+public class QuadTreeTest<I extends Number> {
     final static JFrame frame = new JFrame();
     final static GraphicsPanel panel = new GraphicsPanel();
-    final static List<NTreeNode> selected = new Vector<>();
+    final static List<NTreeNode<Integer>> selected = new Vector<>();
     final static int width = 500;
     final static int height = 500;
-    final static Ntree<Integer> quadTree = new Ntree<>(new Box(0, 0, width, height), 1, 10);
+    final static QuadTree<Integer> quadTree = new QuadTree<>(new Box(0, 0, width, height), 1, 10);
 
     static void addRect(final Box rect) {
         quadTree.insert(rect, null);
@@ -113,14 +107,12 @@ public class QuadTree {
 
             @Override
             public void mouseMoved(MouseEvent e) {
-                final List<Ntree<Integer>.NTreeNode> matchedObjects = quadTree.getObjectsContaining(e.getX(), e.getY());
-                selected.parallelStream().forEach((selectedObj) -> {
-                    selectedObj.isSelected = false;
-                });
+                final List<NTreeNode<Integer>> matchedObjects = quadTree.getObjectsContaining(e.getX(), e.getY());
+                selected.parallelStream().forEach((selectedObj) -> selectedObj.isSelected = false);
 
                 selected.clear();
 
-                for (NTreeNode obj : matchedObjects) {
+                for (NTreeNode<Integer> obj : matchedObjects) {
                     obj.isSelected = true;
                     selected.add(obj);
 
@@ -144,13 +136,13 @@ public class QuadTree {
             @Override
             public void mouseReleased(MouseEvent e) {
                 panel.hasSelection = false;
-                if (isDragging == false) {
+                if (!isDragging) {
                     return;
                 }
-                final int x1 = startCoords[0] > e.getX() ? startCoords[0] : e.getX();
-                final int y1 = startCoords[1] > e.getY() ? startCoords[1] : e.getY();
-                final int x2 = startCoords[0] <= e.getX() ? startCoords[0] : e.getX();
-                final int y2 = startCoords[1] <= e.getY() ? startCoords[1] : e.getY();
+                final int x1 = Math.max(startCoords[0], e.getX());
+                final int y1 = Math.max(startCoords[1], e.getY());
+                final int x2 = Math.min(startCoords[0], e.getX());
+                final int y2 = Math.min(startCoords[1], e.getY());
                 addRect(new Box(x2, y2, x1 - x2, y1 - y2));
 
             }

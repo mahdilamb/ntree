@@ -34,4 +34,6 @@ public class Box implements Collidable {
     public double realMax(int d) {
         return max[d];
     }
+
+
 }

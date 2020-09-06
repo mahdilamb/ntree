@@ -2,29 +2,23 @@ package net.mahdilamb.ntree;
 
 
 import java.util.List;
+import java.util.Map;
 import java.util.Vector;
 
-/**
- * A generic N-dimensional tree (e.g. Quadtree in 2 dimensions; Octree in 3 dimensions;
- * <p>
- * Note that "1 << x" is used instead of "2^x" (i.e. 2 to the power x).
- *
- * @param <T>
- * @author mahdi lamb
- */
-
-public class Ntree<T> {
-    final List<Ntree<T>> children = new Vector<>();
-    final List<NTreeNode> objects = new Vector<>();
-    final List<NTreeNode> foundObjects = new Vector<>();
-    int capacity;
-    int maxLevel;
-    Box bounds;
-    Ntree<T> parent;
-    int numDimensions;
-    private boolean isLeaf = true;
+//Based on https://codereview.stackexchange.com/questions/194836/recursive-quadtree-implementation-in-c
+public class NTree<T> {
+    final List<NTree<T>> children = new Vector<>();
+    final List<NTreeNode<T>> objects = new Vector<>();
+    final List<NTreeNode<T>> foundObjects = new Vector<>();
+    private int capacity;
+    private int maxLevel;
+    private Box bounds;
+    NTree<T> parent;
+    private int numDimensions;
+    boolean isLeaf = true;
     private int level = 0;
-    public Ntree(final Box bound, final int capacity, final int maxLevel) {
+
+    public NTree(final Box bound, final int capacity, final int maxLevel) {
         this.bounds = bound;
         this.capacity = capacity;
         this.maxLevel = maxLevel;
@@ -33,12 +27,13 @@ public class Ntree<T> {
             children.add(null);
         }
     }
-    public Ntree(float[] min, float[] max, final int capacity, final int maxLevel) {
-        this(new Box(min, max),capacity, maxLevel);
+
+    public NTree(float[] min, float[] max, final int capacity, final int maxLevel) {
+        this(new Box(min, max), capacity, maxLevel);
 
     }
 
-    public Ntree(final Ntree<T> other) {
+    public NTree(final NTree<T> other) {
         this(other.getBounds(), other.capacity, other.maxLevel);
     }
 
@@ -60,7 +55,7 @@ public class Ntree<T> {
                 thisMax[e] = thisMin[e] + newLengths[e];
             }
 
-            final Ntree<T> newNode = new Ntree<>(new Box(thisMin, thisMax), capacity, maxLevel);
+            final NTree<T> newNode = new NTree<>(new Box(thisMin, thisMax), capacity, maxLevel);
             newNode.level = level + 1;
             newNode.parent = this;
             children.set(i, newNode);
@@ -69,7 +64,7 @@ public class Ntree<T> {
         isLeaf = false;
     }
 
-    private Ntree<T> getChild(final Collidable bound) {
+    NTree<T> getChild(final Collidable bound) {
         int i = 0;
         for (int d = 0; d < numDimensions; d++) {
             final float center = (float) ((getBounds().realMin(d) + getBounds().realMax(d)) * .5f);
@@ -86,7 +81,7 @@ public class Ntree<T> {
     private void discardEmptyBuckets() {
         if (objects.size() == 0) return;
         if (!isLeaf) {
-            for (final Ntree<T> child : children)
+            for (final NTree<T> child : children)
                 if (!child.isLeaf || child.objects.size() > 0)
                     return;
         }
@@ -95,7 +90,7 @@ public class Ntree<T> {
             parent.discardEmptyBuckets();
     }
 
-    public boolean insert(final NTreeNode obj) {
+    public boolean insert(final NTreeNode<T> obj) {
         if (obj.bound.numDimensions() != numDimensions) {
             throw new IllegalArgumentException("Can only insert objects of the same number of dimension");
         }
@@ -103,7 +98,7 @@ public class Ntree<T> {
             return false;
         }
         if (!isLeaf) {
-            final Ntree<T> child = getChild(obj.bound);
+            final NTree<T> child = getChild(obj.bound);
             if (child != null) {
                 return child.insert(obj);
             }
@@ -118,13 +113,13 @@ public class Ntree<T> {
         return true;
     }
 
-    public boolean insert(final Collidable bounds, T object) {
+    public boolean insert(final Box bounds, T object) {
 
-        return insert(new NTreeNode(bounds, object));
+        return insert(new NTreeNode<T>(bounds, object));
 
     }
 
-    public boolean remove(final NTreeNode obj) {
+    public boolean remove(final NTreeNode<T> obj) {
         if (obj.parent == null) {
             return false;
         }
@@ -137,13 +132,13 @@ public class Ntree<T> {
         return true;
     }
 
-    public boolean update(final NTreeNode obj) {
+    public boolean update(final NTreeNode<T> obj) {
         if (!remove(obj)) return false;
 
         if (parent != null && !getBounds().containsBoundingBox(obj.bound))
             return parent.insert(obj);
         if (!isLeaf) {
-            final Ntree<T> child = getChild(obj.bound);
+            final NTree<T> child = getChild(obj.bound);
             if (child != null) {
                 return child.insert(obj);
             }
@@ -152,22 +147,22 @@ public class Ntree<T> {
         return insert(obj);
     }
 
-    public List<NTreeNode> getObjectsContaining(final Collidable bound) {
+    public List<NTreeNode<T>> getObjectsContaining(final Collidable bound) {
         foundObjects.clear();
-        for (final NTreeNode obj : objects) {
-            if (obj.bound != bound && obj.bound.containsBoundingBox(bound))
+        for (final NTreeNode<T> obj : objects) {
+            if (obj.bound != bound && obj.bound.containsBoundingBox(bound)) {
                 foundObjects.add(obj);
+            }
         }
 
         if (!isLeaf) {
-            final Ntree<T> child = getChild(bound);
+            final NTree<T> child = getChild(bound);
 
             if (child != null) {
                 child.getObjectsContaining(bound);
                 foundObjects.addAll(child.foundObjects);
             } else {
-                for (final Ntree<T> leaf : children) {
-
+                for (final NTree<T> leaf : children) {
                     if (leaf.getBounds().containsBoundingBox(bound)) {
                         leaf.getObjectsContaining(bound);
                         foundObjects.addAll(leaf.foundObjects);
@@ -178,21 +173,21 @@ public class Ntree<T> {
         return foundObjects;
     }
 
-    public List<NTreeNode> getObjectsInBound(final Collidable bound) {
+    public List<NTreeNode<T>> getObjectsInBound(final Collidable bound) {
         foundObjects.clear();
-        for (final NTreeNode obj : objects) {
+        for (final NTreeNode<T> obj : objects) {
             if (obj.bound != bound && obj.bound.intersectsBoundingBox(bound))
                 foundObjects.add(obj);
         }
 
         if (!isLeaf) {
-            final Ntree<T> child = getChild(bound);
+            final NTree<T> child = getChild(bound);
 
             if (child != null) {
                 child.getObjectsInBound(bound);
                 foundObjects.addAll(child.foundObjects);
             } else {
-                for (final Ntree<T> leaf : children) {
+                for (final NTree<T> leaf : children) {
                     if (leaf.getBounds().intersectsBoundingBox(bound)) {
                         leaf.getObjectsInBound(bound);
                         foundObjects.addAll(leaf.foundObjects);
@@ -206,7 +201,7 @@ public class Ntree<T> {
     public int totalChildren() {
         int total = 0;
         if (isLeaf) return total;
-        for (final Ntree<T> child : children)
+        for (final NTree<T> child : children)
             total += child.totalChildren();
         return ((1 << numDimensions) + total);
     }
@@ -214,7 +209,7 @@ public class Ntree<T> {
     public int totalObjects() {
         int total = objects.size();
         if (!isLeaf) {
-            for (final Ntree<T> child : children)
+            for (final NTree<T> child : children)
                 total += child.totalObjects();
         }
         return total;
@@ -223,40 +218,26 @@ public class Ntree<T> {
 
     public void clear() {
         if (objects.size() != 0) {
-            for (final NTreeNode obj : objects) {
+            for (final NTreeNode<T> obj : objects) {
                 obj.parent = null;
             }
             objects.clear();
         }
         if (!isLeaf) {
-            for (final Ntree<T> child : children) {
+            for (final NTree<T> child : children) {
                 child.clear();
             }
             isLeaf = true;
         }
     }
 
-    public List<Ntree<T>> getChildren() {
+    public List<NTree<T>> getChildren() {
         return children;
-    }
-
-    public List<NTreeNode> getObjectsContaining(final int x, final int y) {
-        return getObjectsContaining(new Box(x, y, 0, 0));
     }
 
     public Box getBounds() {
         return bounds;
     }
 
-    public class NTreeNode {
-        public Collidable bound;
-        public boolean isSelected = false;
-        public T data;
-        Ntree<T> parent;
 
-        public NTreeNode(Collidable bounds, T data) {
-            this.bound = bounds;
-            this.data = data;
-        }
-    }
 }
