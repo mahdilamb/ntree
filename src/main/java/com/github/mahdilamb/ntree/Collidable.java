@@ -1,4 +1,4 @@
-package net.mahdilamb.ntree;
+package com.github.mahdilamb.ntree;
 
 public interface Collidable {
     int numDimensions();

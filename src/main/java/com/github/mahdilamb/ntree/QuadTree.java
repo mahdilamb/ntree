@@ -1,4 +1,4 @@
-package net.mahdilamb.ntree;
+package com.github.mahdilamb.ntree;
 
 import java.util.List;
 

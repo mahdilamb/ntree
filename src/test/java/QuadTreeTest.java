@@ -1,13 +1,12 @@
-import net.mahdilamb.ntree.Box;
-import net.mahdilamb.ntree.NTree;
-import net.mahdilamb.ntree.NTreeNode;
-import net.mahdilamb.ntree.QuadTree;
+import com.github.mahdilamb.ntree.Box;
+import com.github.mahdilamb.ntree.NTree;
+import com.github.mahdilamb.ntree.NTreeNode;
+import com.github.mahdilamb.ntree.QuadTree;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Vector;
 

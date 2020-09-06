@@ -1,8 +1,7 @@
-package net.mahdilamb.ntree;
+package com.github.mahdilamb.ntree;
 
 
 import java.util.List;
-import java.util.Map;
 import java.util.Vector;
 
 //Based on https://codereview.stackexchange.com/questions/194836/recursive-quadtree-implementation-in-c
@@ -10,12 +9,12 @@ public class NTree<T> {
     final List<NTree<T>> children = new Vector<>();
     final List<NTreeNode<T>> objects = new Vector<>();
     final List<NTreeNode<T>> foundObjects = new Vector<>();
+    NTree<T> parent;
+    boolean isLeaf = true;
     private int capacity;
     private int maxLevel;
     private Box bounds;
-    NTree<T> parent;
     private int numDimensions;
-    boolean isLeaf = true;
     private int level = 0;
 
     public NTree(final Box bound, final int capacity, final int maxLevel) {

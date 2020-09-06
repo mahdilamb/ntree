@@ -1,7 +1,4 @@
-package net.mahdilamb.ntree;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.github.mahdilamb.ntree;
 
 public class OcTree<T> extends NTreeRoot<T> {
 
@@ -12,5 +9,5 @@ public class OcTree<T> extends NTreeRoot<T> {
     public OcTree(float[] min, float[] max, int capacity, int maxLevel) {
         this(new Box(min, max), capacity, maxLevel);
     }
-
+    //TODO ray intersection
 }

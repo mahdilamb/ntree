@@ -1,4 +1,4 @@
-package net.mahdilamb.ntree;
+package com.github.mahdilamb.ntree;
 
 /**
  * A generic N-dimensional tree (e.g. Quadtree in 2 dimensions; Octree in 3 dimensions;
