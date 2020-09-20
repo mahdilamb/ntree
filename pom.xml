@@ -21,7 +21,7 @@
     <dependencies>
 
     </dependencies>
-    <groupId>com.github.mahdilamb</groupId>
+    <groupId>net.mahdilamb</groupId>
     <artifactId>ntree</artifactId>
     <version>0.9.0-SNAPSHOT</version>
 

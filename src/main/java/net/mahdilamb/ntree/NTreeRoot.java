@@ -1,4 +1,4 @@
-package com.github.mahdilamb.ntree;
+package net.mahdilamb.ntree;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +31,7 @@ public class NTreeRoot<T> extends NTree<T> {
     @Override
     public boolean insert(final NTreeNode<T> obj) {
         if (super.insert(obj)) {
-            allObjects.put((T) obj.data, obj);
+            allObjects.put(obj.data, obj);
             return true;
         }
         return false;

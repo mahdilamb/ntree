@@ -1,4 +1,4 @@
-package com.github.mahdilamb.ntree;
+package net.mahdilamb.ntree;
 
 
 import java.util.List;
@@ -11,10 +11,10 @@ public class NTree<T> {
     final List<NTreeNode<T>> foundObjects = new Vector<>();
     NTree<T> parent;
     boolean isLeaf = true;
-    private int capacity;
-    private int maxLevel;
-    private Box bounds;
-    private int numDimensions;
+    private final int capacity;
+    private final int maxLevel;
+    private final Box bounds;
+    private final int numDimensions;
     private int level = 0;
 
     public NTree(final Box bound, final int capacity, final int maxLevel) {

@@ -3,26 +3,11 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2354d06e-36c2-4422-91ef-9b1f7fa7aa82" name="Default Changelist" comment="Update README.md" />
+    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +23,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1gkbgDAjUH9coELapUafN7udrzN" />
+  <component name="ProjectId" id="1hNzsQRSGTDGWaqHByBIpqdaIHb" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="flattenModules" value="true" />
@@ -51,97 +36,96 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
-    <configuration name="QuadTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuadTree" />
+    <configuration name="QuadTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuadTreeTest" />
       <module name="ntree" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuadTree" />
+        <item itemvalue="Application.QuadTreeTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2354d06e-36c2-4422-91ef-9b1f7fa7aa82" name="Default Changelist" comment="" />
-      <created>1598661647582</created>
+      <changelist id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="" />
+      <created>1599866544144</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598661647582</updated>
+      <updated>1599866544144</updated>
     </task>
-    <task id="LOCAL-00001" summary="remove imglib2 dependency">
-      <created>1598783066728</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1598783066728</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Update README.md">
-      <created>1599576573546</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1599576573546</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove imglib2 dependency" />
-    <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="805" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1598662375779">
+    <state width="874" height="292" key="GridCell.Tab.0.bottom" timestamp="1599866577118">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state x="805" y="249" key="#com.intellij.ide.util.MemberChooser/80.0.1840.1080@80.0.1840.1080" timestamp="1598662375779" />
-    <state x="271" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1598661725450">
+    <state width="874" height="292" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
+    <state width="874" height="292" key="GridCell.Tab.0.center" timestamp="1599866577118">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state x="271" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1598661725450" />
-    <state width="1797" height="294" key="GridCell.Tab.0.bottom" timestamp="1598663211042">
+    <state width="874" height="292" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
+    <state width="874" height="292" key="GridCell.Tab.0.left" timestamp="1599866577118">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="1797" height="294" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
-    <state width="1797" height="294" key="GridCell.Tab.0.center" timestamp="1598663211042">
+    <state width="874" height="292" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
+    <state width="874" height="292" key="GridCell.Tab.0.right" timestamp="1599866577118">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="1797" height="294" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
-    <state width="1797" height="294" key="GridCell.Tab.0.left" timestamp="1598663211042">
-      <screen x="80" y="0" width="1840" height="1080" />
-    </state>
-    <state width="1797" height="294" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
-    <state width="1797" height="294" key="GridCell.Tab.0.right" timestamp="1598663211042">
-      <screen x="80" y="0" width="1840" height="1080" />
-    </state>
-    <state width="1797" height="294" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1598663211042" />
-    <state x="592" y="272" key="Vcs.Push.Dialog.v2" timestamp="1599576575476">
-      <screen x="80" y="0" width="1840" height="1080" />
-    </state>
-    <state x="592" y="272" key="Vcs.Push.Dialog.v2/80.0.1840.1080@80.0.1840.1080" timestamp="1599576575476" />
-    <state x="817" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599386764759">
-      <screen x="80" y="0" width="1840" height="1080" />
-    </state>
-    <state x="817" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/80.0.1840.1080@80.0.1840.1080" timestamp="1599386764759" />
+    <state width="874" height="292" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
   </component>
 </project>

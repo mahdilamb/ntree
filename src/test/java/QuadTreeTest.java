@@ -1,7 +1,7 @@
-import com.github.mahdilamb.ntree.Box;
-import com.github.mahdilamb.ntree.NTree;
-import com.github.mahdilamb.ntree.NTreeNode;
-import com.github.mahdilamb.ntree.QuadTree;
+import net.mahdilamb.ntree.Box;
+import net.mahdilamb.ntree.NTree;
+import net.mahdilamb.ntree.NTreeNode;
+import net.mahdilamb.ntree.QuadTree;
 
 import javax.swing.*;
 import java.awt.*;
@@ -89,7 +89,7 @@ public class QuadTreeTest<I extends Number> {
     public static void main(String... args) {
 
         MouseAdapter drawTool = new MouseAdapter() {
-            private int[] startCoords = new int[2];
+            private final int[] startCoords = new int[2];
             private boolean isDragging = false;
 
             @Override
