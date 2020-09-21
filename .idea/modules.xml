@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ntree.iml" filepath="$PROJECT_DIR$/ntree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/illuminate-ntree.iml" filepath="$PROJECT_DIR$/illuminate-ntree.iml" />
     </modules>
   </component>
 </project>

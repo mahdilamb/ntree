@@ -22,11 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
+    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="fix issue when min isn't real min in CollidableBox">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,13 +62,44 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24252874" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReplicateIssueInRendererTest">
     <configuration name="QuadTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuadTreeTest" />
-      <module name="ntree" />
+      <option name="MAIN_CLASS_NAME" value="net.mahdilamb.illuminate.test.QuadTreeTest" />
+      <module name="illuminate-ntree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.mahdilamb.illuminate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplicateIssueInRendererTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="illuminate-ntree" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.mahdilamb.illuminate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.mahdilamb.illuminate.test" />
+      <option name="MAIN_CLASS_NAME" value="net.mahdilamb.illuminate.test.ReplicateIssueInRendererTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -108,8 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.QuadTreeTest" />
+      <item itemvalue="JUnit.ReplicateIssueInRendererTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReplicateIssueInRendererTest" />
         <item itemvalue="Application.QuadTreeTest" />
       </list>
     </recent_temporary>
@@ -130,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600597738291</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix issue when min isn't real min in CollidableBox">
+      <created>1600690850429</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600690850429</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,27 +197,57 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
+    <MESSAGE value="fix issue when min isn't real min in CollidableBox" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix issue when min isn't real min in CollidableBox" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="874" height="292" key="GridCell.Tab.0.bottom" timestamp="1599866577118">
+    <state x="480" y="114" key="#Project_Structure" timestamp="1600690538675">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
-    <state width="874" height="292" key="GridCell.Tab.0.center" timestamp="1599866577118">
+    <state x="480" y="114" key="#Project_Structure/80.0.1840.1080@80.0.1840.1080" timestamp="1600690538675" />
+    <state x="454" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600691136393">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
-    <state width="874" height="292" key="GridCell.Tab.0.left" timestamp="1599866577118">
+    <state x="454" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600691136393" />
+    <state x="729" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600690548642">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
-    <state width="874" height="292" key="GridCell.Tab.0.right" timestamp="1599866577118">
+    <state x="729" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600690548642" />
+    <state x="1240" y="298" key="FileChooserDialogImpl" timestamp="1600690188258">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
+    <state x="1240" y="298" key="FileChooserDialogImpl/80.0.1840.1080@80.0.1840.1080" timestamp="1600690188258" />
+    <state width="1797" height="293" key="GridCell.Tab.0.bottom" timestamp="1600694908505">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="293" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1600694908505" />
+    <state width="1797" height="293" key="GridCell.Tab.0.center" timestamp="1600694908505">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="293" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1600694908505" />
+    <state width="1797" height="293" key="GridCell.Tab.0.left" timestamp="1600694908505">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="293" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1600694908505" />
+    <state width="1797" height="293" key="GridCell.Tab.0.right" timestamp="1600694908505">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="293" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1600694908505" />
+    <state x="288" y="263" key="RollbackChangesDialog" timestamp="1600694870603">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state x="288" y="263" key="RollbackChangesDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600694870603" />
+    <state x="592" y="272" key="Vcs.Push.Dialog.v2" timestamp="1600690855647">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state x="592" y="272" key="Vcs.Push.Dialog.v2/80.0.1840.1080@80.0.1840.1080" timestamp="1600690855647" />
+    <state x="707" y="273" width="585" height="534" key="find.popup" timestamp="1600688979517">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state x="707" y="273" width="585" height="534" key="find.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1600688979517" />
   </component>
 </project>
