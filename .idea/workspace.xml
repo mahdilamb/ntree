@@ -22,11 +22,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
+    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_26_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_joml_joml_1_9_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Box.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/Collidable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/NTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/NTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/NTreeRoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/OcTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/ntree/QuadTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuadTreeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GraphicsPanel.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,12 +86,38 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24252874" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReplicateIssueInRendererTest">
     <configuration name="QuadTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuadTreeTest" />
-      <module name="ntree" />
+      <option name="MAIN_CLASS_NAME" value="net.mahdilamb.illuminate.test.QuadTreeTest" />
+      <module name="illuminate-ntree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.mahdilamb.illuminate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplicateIssueInRendererTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="illuminate-ntree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.mahdilamb.illuminate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.mahdilamb.illuminate.test" />
+      <option name="MAIN_CLASS_NAME" value="net.mahdilamb.illuminate.test.ReplicateIssueInRendererTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,8 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ReplicateIssueInRendererTest" />
+      <item itemvalue="Application.QuadTreeTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReplicateIssueInRendererTest" />
         <item itemvalue="Application.QuadTreeTest" />
       </list>
     </recent_temporary>
@@ -143,27 +209,48 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
     <option name="LAST_COMMIT_MESSAGE" value="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="874" height="292" key="GridCell.Tab.0.bottom" timestamp="1599866577118">
+    <state x="480" y="114" key="#Project_Structure" timestamp="1600690538675">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
-    <state width="874" height="292" key="GridCell.Tab.0.center" timestamp="1599866577118">
+    <state x="480" y="114" key="#Project_Structure/80.0.1840.1080@80.0.1840.1080" timestamp="1600690538675" />
+    <state x="454" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600690554553">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
-    <state width="874" height="292" key="GridCell.Tab.0.left" timestamp="1599866577118">
+    <state x="454" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600690554553" />
+    <state x="729" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600690548642">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
-    <state width="874" height="292" key="GridCell.Tab.0.right" timestamp="1599866577118">
+    <state x="729" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600690548642" />
+    <state x="1240" y="298" key="FileChooserDialogImpl" timestamp="1600690188258">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="874" height="292" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1599866577118" />
+    <state x="1240" y="298" key="FileChooserDialogImpl/80.0.1840.1080@80.0.1840.1080" timestamp="1600690188258" />
+    <state width="1797" height="294" key="GridCell.Tab.0.bottom" timestamp="1600690747248">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1600690747248" />
+    <state width="1797" height="294" key="GridCell.Tab.0.center" timestamp="1600690747248">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1600690747248" />
+    <state width="1797" height="294" key="GridCell.Tab.0.left" timestamp="1600690747247">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1600690747247" />
+    <state width="1797" height="294" key="GridCell.Tab.0.right" timestamp="1600690747248">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state width="1797" height="294" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1600690747248" />
+    <state x="707" y="273" width="585" height="534" key="find.popup" timestamp="1600688979517">
+      <screen x="80" y="0" width="1840" height="1080" />
+    </state>
+    <state x="707" y="273" width="585" height="534" key="find.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1600688979517" />
   </component>
 </project>
