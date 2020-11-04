@@ -1,4 +1,4 @@
-package net.mahdilamb.illuminate.test;
+package net.mahdilamb.ntree;
 
 public class OcTree<T> extends NTreeRoot<T> {
 

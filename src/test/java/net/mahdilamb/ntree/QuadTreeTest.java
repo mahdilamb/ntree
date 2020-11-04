@@ -1,4 +1,4 @@
-package net.mahdilamb.illuminate.test;
+package net.mahdilamb.ntree;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,7 +44,7 @@ class GraphicsPanel extends JPanel {
         drawBounds(g, QuadTreeTest.quadTree);
         final List<NTreeNode<Integer>> objects = QuadTreeTest.quadTree
                 .getObjectsInBound(new CollidableAABB(0, 0, QuadTreeTest.width, QuadTreeTest.height));
-        objects.sort((o1, o2) -> ((Boolean) o1.isSelected).compareTo(o2.isSelected));
+        objects.sort((o1, o2) -> Boolean.compare(o1.isSelected, o2.isSelected));
 
         for (NTreeNode<Integer> obj : objects) {
             g.setColor(obj.isSelected ? java.awt.Color.green : java.awt.Color.red);
@@ -103,15 +103,18 @@ public class QuadTreeTest<I extends Number> {
             @Override
             public void mouseMoved(MouseEvent e) {
                 final List<NTreeNode<Integer>> matchedObjects = quadTree.getObjectsContaining(e.getX(), e.getY());
+
                 selected.parallelStream().forEach((selectedObj) -> selectedObj.isSelected = false);
 
                 selected.clear();
+                if (matchedObjects != null) {
+                    for (NTreeNode<Integer> obj : matchedObjects) {
+                        obj.isSelected = true;
+                        selected.add(obj);
 
-                for (NTreeNode<Integer> obj : matchedObjects) {
-                    obj.isSelected = true;
-                    selected.add(obj);
-
+                    }
                 }
+
 
                 panel.repaint();
             }

@@ -1,4 +1,4 @@
-package net.mahdilamb.illuminate.test;
+package net.mahdilamb.ntree;
 
 /**
  * A generic N-dimensional tree (e.g. Quadtree in 2 dimensions; Octree in 3 dimensions;
@@ -9,9 +9,9 @@ package net.mahdilamb.illuminate.test;
  * @author mahdi lamb
  */
 public class NTreeNode<T> {
-    public CollidableAABB bound;
+    public final CollidableAABB bound;
     public boolean isSelected = false;
-    public T data;
+    public final T data;
     NTree<T> parent;
 
     public NTreeNode(CollidableAABB bounds, T data) {

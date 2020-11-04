@@ -1,4 +1,4 @@
-package net.mahdilamb.illuminate.test;
+package net.mahdilamb.ntree;
 
 
 import java.util.Collections;
@@ -96,7 +96,7 @@ public class NTree<T> {
             throw new IllegalArgumentException("Can only insert objects of the same number of dimension");
         }
         if (obj.parent != null) {
-            System.out.println(String.format("Trying to add %s, but already has a parent", obj));
+            System.out.printf("Trying to add %s, but already has a parent%n", obj);
             return false;
         }
         //if it has children, recurse continuously until we get to end of branch
@@ -244,7 +244,7 @@ public class NTree<T> {
     private String buildString(int level) {
 
         for (final NTreeNode<T> obj : objects) {
-            System.out.println(String.format("%s* %s", String.join("", Collections.nCopies(level + 1, "  ")), obj));
+            System.out.printf("%s* %s%n", String.join("", Collections.nCopies(level + 1, "  ")), obj);
         }
         if (!isLeaf) {
 

@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.joml:joml:1.9.25'
+    implementation 'org.reflections:reflections:0.9.12'
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+group = 'net.mahdilamb'
+version = '0.9.0'
+sourceCompatibility = '8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task demo(type: JavaExec, dependsOn: ['testClasses']) {
+    classpath sourceSets.test.runtimeClasspath
+    main = "net.mahdilamb.ntree.QuadTreeTest"
+}

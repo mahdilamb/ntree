@@ -23,13 +23,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="fix issue when min isn't real min in CollidableBox">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_26_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joml_joml_1_9_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/illuminate/test/NTreeRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mahdilamb/illuminate/test/NTreeRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/QuadTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/QuadTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,10 +97,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="cae55436-0534-44dc-ac7c-04db58e27c47" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -62,106 +119,56 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24252874" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="git push --force" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReplicateIssueInRendererTest">
-    <configuration name="QuadTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.mahdilamb.illuminate.test.QuadTreeTest" />
-      <module name="illuminate-ntree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.mahdilamb.illuminate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReplicateIssueInRendererTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="illuminate-ntree" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.mahdilamb.illuminate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.mahdilamb.illuminate.test" />
-      <option name="MAIN_CLASS_NAME" value="net.mahdilamb.illuminate.test.ReplicateIssueInRendererTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ntree [demo]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="demo" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.QuadTreeTest" />
-      <item itemvalue="JUnit.ReplicateIssueInRendererTest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReplicateIssueInRendererTest" />
-        <item itemvalue="Application.QuadTreeTest" />
+        <item itemvalue="Gradle.ntree [demo]" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +180,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599866544144</updated>
+      <workItem from="1604529522070" duration="362000" />
+      <workItem from="1604529999421" duration="171000" />
     </task>
     <task id="LOCAL-00001" summary="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id">
       <created>1600597738291</created>
@@ -198,6 +207,9 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -220,34 +232,43 @@
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="480" y="114" key="#Project_Structure/80.0.1840.1080@80.0.1840.1080" timestamp="1600690538675" />
-    <state x="454" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600691136393">
-      <screen x="80" y="0" width="1840" height="1080" />
+    <state x="452" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604530181187">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
+    <state x="452" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/77.0.1843.1080@77.0.1843.1080" timestamp="1604530181187" />
     <state x="454" y="194" width="1092" height="763" key="#com.intellij.execution.impl.EditConfigurationsDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600691136393" />
     <state x="729" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600690548642">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="729" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600690548642" />
-    <state x="1240" y="298" key="FileChooserDialogImpl" timestamp="1600695959750">
+    <state x="732" y="228" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601119333082">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state x="1240" y="298" key="FileChooserDialogImpl/80.0.1840.1080@80.0.1840.1080" timestamp="1600695959750" />
-    <state width="1797" height="293" key="GridCell.Tab.0.bottom" timestamp="1600695072240">
+    <state x="732" y="228" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333082" />
+    <state x="1240" y="298" key="FileChooserDialogImpl" timestamp="1601119176867">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state width="1797" height="293" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1600695072240" />
-    <state width="1797" height="293" key="GridCell.Tab.0.center" timestamp="1600695072240">
-      <screen x="80" y="0" width="1840" height="1080" />
+    <state x="1240" y="298" key="FileChooserDialogImpl/80.0.1840.1080@80.0.1840.1080" timestamp="1601119176867" />
+    <state width="876" height="294" key="GridCell.Tab.0.bottom" timestamp="1604529891849">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="1797" height="293" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1600695072240" />
-    <state width="1797" height="293" key="GridCell.Tab.0.left" timestamp="1600695072240">
-      <screen x="80" y="0" width="1840" height="1080" />
+    <state width="876" height="294" key="GridCell.Tab.0.bottom/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="1797" height="416" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
+    <state width="876" height="294" key="GridCell.Tab.0.center" timestamp="1604529891849">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="1797" height="293" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1600695072240" />
-    <state width="1797" height="293" key="GridCell.Tab.0.right" timestamp="1600695072240">
-      <screen x="80" y="0" width="1840" height="1080" />
+    <state width="876" height="294" key="GridCell.Tab.0.center/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="1797" height="416" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
+    <state width="876" height="294" key="GridCell.Tab.0.left" timestamp="1604529891849">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="1797" height="293" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1600695072240" />
+    <state width="876" height="294" key="GridCell.Tab.0.left/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="1797" height="416" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
+    <state width="876" height="294" key="GridCell.Tab.0.right" timestamp="1604529891849">
+      <screen x="77" y="0" width="1843" height="1080" />
+    </state>
+    <state width="876" height="294" key="GridCell.Tab.0.right/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="1797" height="416" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
     <state x="612" y="369" key="MultipleFileMergeDialog" timestamp="1600695045875">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
@@ -256,6 +277,11 @@
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="288" y="263" key="RollbackChangesDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1600694870603" />
+    <state x="165" y="145" key="SettingsEditor" timestamp="1604529536018">
+      <screen x="77" y="0" width="1843" height="1080" />
+    </state>
+    <state x="165" y="145" key="SettingsEditor/77.0.1843.1080@77.0.1843.1080" timestamp="1604529536018" />
+    <state x="168" y="145" key="SettingsEditor/80.0.1840.1080@80.0.1840.1080" timestamp="1601119106399" />
     <state x="592" y="272" key="Vcs.Push.Dialog.v2" timestamp="1600695037647">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
@@ -264,9 +290,9 @@
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="707" y="273" width="585" height="534" key="find.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1600688979517" />
-    <state x="630" y="287" width="672" height="677" key="run.anything.popup" timestamp="1600695063941">
+    <state x="630" y="287" width="672" height="677" key="run.anything.popup" timestamp="1601119184114">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
-    <state x="630" y="287" width="672" height="677" key="run.anything.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1600695063941" />
+    <state x="630" y="287" width="672" height="677" key="run.anything.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1601119184114" />
   </component>
 </project>

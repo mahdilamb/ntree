@@ -1,10 +1,10 @@
-package net.mahdilamb.illuminate.test;
+package net.mahdilamb.ntree;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class NTreeRoot<T> extends NTree<T> {
-    public Map<T, NTreeNode<T>> allObjects = new HashMap<>();
+    public final Map<T, NTreeNode<T>> allObjects = new HashMap<>();
 
     public NTreeRoot(CollidableAABB bound, int capacity, int maxLevel) {
         super(bound, capacity, maxLevel);
@@ -37,6 +37,7 @@ public class NTreeRoot<T> extends NTree<T> {
         return false;
     }
 
+    @Override
     public boolean remove(final NTreeNode<T> obj) {
         if (super.remove(obj)) {
             allObjects.remove(obj.data);
