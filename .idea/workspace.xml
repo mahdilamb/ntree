@@ -22,30 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="fix issue when min isn't real min in CollidableBox">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_26_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joml_joml_1_9_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_RC1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_RC1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mahdilamb/illuminate/test/NTreeRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mahdilamb/illuminate/test/NTreeRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/QuadTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/QuadTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/mahdilamb/illuminate/test/ReplicateIssueInRendererTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +50,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -122,18 +105,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24252874" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="git push --force" />
+      <command value="git update-index --chmod=+x gradlew " />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.ntree [assemble]">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -146,6 +132,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="ntree [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="ntree [demo]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -166,8 +171,13 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.ntree [demo]" />
+      <item itemvalue="Gradle.ntree [assemble]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ntree [assemble]" />
         <item itemvalue="Gradle.ntree [demo]" />
       </list>
     </recent_temporary>
@@ -181,7 +191,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599866544144</updated>
       <workItem from="1604529522070" duration="362000" />
-      <workItem from="1604529999421" duration="171000" />
+      <workItem from="1604529999421" duration="780000" />
     </task>
     <task id="LOCAL-00001" summary="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id">
       <created>1600597738291</created>
@@ -204,7 +214,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600695033639</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="move to gradle.xml">
+      <created>1604530293736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604530293736</updated>
+    </task>
+    <task id="LOCAL-00005" summary="move to gradle.xml">
+      <created>1604530411698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604530411698</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1604530683025</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604530683025</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +256,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id" />
     <MESSAGE value="fix issue when min isn't real min in CollidableBox" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix issue when min isn't real min in CollidableBox" />
+    <MESSAGE value="move to gradle.xml" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="480" y="114" key="#Project_Structure" timestamp="1600690538675">
@@ -245,29 +278,33 @@
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="732" y="228" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333082" />
+    <state x="1217" y="392" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604530322706">
+      <screen x="77" y="0" width="1843" height="1080" />
+    </state>
+    <state x="1217" y="392" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/77.0.1843.1080@77.0.1843.1080" timestamp="1604530322706" />
     <state x="1240" y="298" key="FileChooserDialogImpl" timestamp="1601119176867">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="1240" y="298" key="FileChooserDialogImpl/80.0.1840.1080@80.0.1840.1080" timestamp="1601119176867" />
-    <state width="876" height="294" key="GridCell.Tab.0.bottom" timestamp="1604529891849">
+    <state width="876" height="294" key="GridCell.Tab.0.bottom" timestamp="1604530701520">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.bottom/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="876" height="294" key="GridCell.Tab.0.bottom/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701520" />
     <state width="1797" height="416" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
-    <state width="876" height="294" key="GridCell.Tab.0.center" timestamp="1604529891849">
+    <state width="876" height="294" key="GridCell.Tab.0.center" timestamp="1604530701519">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.center/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="876" height="294" key="GridCell.Tab.0.center/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701519" />
     <state width="1797" height="416" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
-    <state width="876" height="294" key="GridCell.Tab.0.left" timestamp="1604529891849">
+    <state width="876" height="294" key="GridCell.Tab.0.left" timestamp="1604530701519">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.left/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="876" height="294" key="GridCell.Tab.0.left/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701519" />
     <state width="1797" height="416" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
-    <state width="876" height="294" key="GridCell.Tab.0.right" timestamp="1604529891849">
+    <state width="876" height="294" key="GridCell.Tab.0.right" timestamp="1604530701519">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.right/77.0.1843.1080@77.0.1843.1080" timestamp="1604529891849" />
+    <state width="876" height="294" key="GridCell.Tab.0.right/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701519" />
     <state width="1797" height="416" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
     <state x="612" y="369" key="MultipleFileMergeDialog" timestamp="1600695045875">
       <screen x="80" y="0" width="1840" height="1080" />
@@ -282,17 +319,19 @@
     </state>
     <state x="165" y="145" key="SettingsEditor/77.0.1843.1080@77.0.1843.1080" timestamp="1604529536018" />
     <state x="168" y="145" key="SettingsEditor/80.0.1840.1080@80.0.1840.1080" timestamp="1601119106399" />
-    <state x="592" y="272" key="Vcs.Push.Dialog.v2" timestamp="1600695037647">
-      <screen x="80" y="0" width="1840" height="1080" />
+    <state x="590" y="272" key="Vcs.Push.Dialog.v2" timestamp="1604530419266">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
+    <state x="590" y="272" key="Vcs.Push.Dialog.v2/77.0.1843.1080@77.0.1843.1080" timestamp="1604530419266" />
     <state x="592" y="272" key="Vcs.Push.Dialog.v2/80.0.1840.1080@80.0.1840.1080" timestamp="1600695037647" />
     <state x="707" y="273" width="585" height="534" key="find.popup" timestamp="1600688979517">
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="707" y="273" width="585" height="534" key="find.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1600688979517" />
-    <state x="630" y="287" width="672" height="677" key="run.anything.popup" timestamp="1601119184114">
-      <screen x="80" y="0" width="1840" height="1080" />
+    <state x="628" y="287" width="674" height="677" key="run.anything.popup" timestamp="1604530616161">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
+    <state x="628" y="287" width="674" height="677" key="run.anything.popup/77.0.1843.1080@77.0.1843.1080" timestamp="1604530616161" />
     <state x="630" y="287" width="672" height="677" key="run.anything.popup/80.0.1840.1080@80.0.1840.1080" timestamp="1601119184114" />
   </component>
 </project>
