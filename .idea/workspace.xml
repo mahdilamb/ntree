@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'" />
+    <list default="true" id="4316fcfc-62cb-456b-a9af-09cbe2101f12" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,24 +47,30 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="ntree" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="ntree" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="ntree" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="illuminate-ntree" type="f1a62948:ProjectNode" />
+                <item name="ntree" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ntree" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -119,7 +128,7 @@
       <command value="git update-index --chmod=+x gradlew " />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ntree [assemble]">
+  <component name="RunManager" selected="Gradle.ntree [test]">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -171,12 +180,33 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ntree [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.ntree [demo]" />
       <item itemvalue="Gradle.ntree [assemble]" />
+      <item itemvalue="Gradle.ntree [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ntree [test]" />
         <item itemvalue="Gradle.ntree [assemble]" />
         <item itemvalue="Gradle.ntree [demo]" />
       </list>
@@ -191,7 +221,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599866544144</updated>
       <workItem from="1604529522070" duration="362000" />
-      <workItem from="1604529999421" duration="780000" />
+      <workItem from="1604529999421" duration="1171000" />
     </task>
     <task id="LOCAL-00001" summary="Fix camera at edges and add keyboard shortcuts to Camera&#10;update group id">
       <created>1600597738291</created>
@@ -235,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604530683025</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1604530805387</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604530805387</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,25 +323,25 @@
       <screen x="80" y="0" width="1840" height="1080" />
     </state>
     <state x="1240" y="298" key="FileChooserDialogImpl/80.0.1840.1080@80.0.1840.1080" timestamp="1601119176867" />
-    <state width="876" height="294" key="GridCell.Tab.0.bottom" timestamp="1604530701520">
+    <state width="876" height="294" key="GridCell.Tab.0.bottom" timestamp="1604531032768">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.bottom/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701520" />
+    <state width="876" height="294" key="GridCell.Tab.0.bottom/77.0.1843.1080@77.0.1843.1080" timestamp="1604531032768" />
     <state width="1797" height="416" key="GridCell.Tab.0.bottom/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
-    <state width="876" height="294" key="GridCell.Tab.0.center" timestamp="1604530701519">
+    <state width="876" height="294" key="GridCell.Tab.0.center" timestamp="1604531032768">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.center/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701519" />
+    <state width="876" height="294" key="GridCell.Tab.0.center/77.0.1843.1080@77.0.1843.1080" timestamp="1604531032768" />
     <state width="1797" height="416" key="GridCell.Tab.0.center/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
-    <state width="876" height="294" key="GridCell.Tab.0.left" timestamp="1604530701519">
+    <state width="876" height="294" key="GridCell.Tab.0.left" timestamp="1604531032768">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.left/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701519" />
+    <state width="876" height="294" key="GridCell.Tab.0.left/77.0.1843.1080@77.0.1843.1080" timestamp="1604531032768" />
     <state width="1797" height="416" key="GridCell.Tab.0.left/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
-    <state width="876" height="294" key="GridCell.Tab.0.right" timestamp="1604530701519">
+    <state width="876" height="294" key="GridCell.Tab.0.right" timestamp="1604531032768">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state width="876" height="294" key="GridCell.Tab.0.right/77.0.1843.1080@77.0.1843.1080" timestamp="1604530701519" />
+    <state width="876" height="294" key="GridCell.Tab.0.right/77.0.1843.1080@77.0.1843.1080" timestamp="1604531032768" />
     <state width="1797" height="416" key="GridCell.Tab.0.right/80.0.1840.1080@80.0.1840.1080" timestamp="1601119333861" />
     <state x="612" y="369" key="MultipleFileMergeDialog" timestamp="1600695045875">
       <screen x="80" y="0" width="1840" height="1080" />
@@ -319,10 +356,10 @@
     </state>
     <state x="165" y="145" key="SettingsEditor/77.0.1843.1080@77.0.1843.1080" timestamp="1604529536018" />
     <state x="168" y="145" key="SettingsEditor/80.0.1840.1080@80.0.1840.1080" timestamp="1601119106399" />
-    <state x="590" y="272" key="Vcs.Push.Dialog.v2" timestamp="1604530419266">
+    <state x="590" y="272" key="Vcs.Push.Dialog.v2" timestamp="1604530810329">
       <screen x="77" y="0" width="1843" height="1080" />
     </state>
-    <state x="590" y="272" key="Vcs.Push.Dialog.v2/77.0.1843.1080@77.0.1843.1080" timestamp="1604530419266" />
+    <state x="590" y="272" key="Vcs.Push.Dialog.v2/77.0.1843.1080@77.0.1843.1080" timestamp="1604530810329" />
     <state x="592" y="272" key="Vcs.Push.Dialog.v2/80.0.1840.1080@80.0.1840.1080" timestamp="1600695037647" />
     <state x="707" y="273" width="585" height="534" key="find.popup" timestamp="1600688979517">
       <screen x="80" y="0" width="1840" height="1080" />

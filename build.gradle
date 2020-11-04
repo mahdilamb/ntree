@@ -13,7 +13,9 @@ dependencies {
     testImplementation(platform('org.junit:junit-bom:5.7.0'))
     testImplementation('org.junit.jupiter:junit-jupiter')
 }
-
+test {
+    useJUnitPlatform()
+}
 group = 'net.mahdilamb'
 version = '0.9.0'
 sourceCompatibility = '8'
